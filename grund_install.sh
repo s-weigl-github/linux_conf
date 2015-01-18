@@ -13,6 +13,7 @@ apt-get install ssh ssh-askpass openssh-server rssh
 apt-get install hddtemp rcconf sensord debian-keyring
 apt-get install whowatch arpwatch ethtool bwm-ng ntp ntpdate
 apt-get install alien lsb-rpm rpm-i18n elfutils lynx lynx-cur-wrapper
-apt-get install libc6-dev libc-dev splix xrdp
+apt-get install libc6-dev libc-dev splix xrdp exfat-utils exfat-fuse
+apt-get install smartmontools systemd 
 echo "----Grundinstallation abgeschlossen----"
 echo "...."
