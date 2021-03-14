@@ -23,3 +23,4 @@ alias mv='mv -i'
 alias cl='clear'
 alias pip='pip-3.1'
 alias uptime='uptime && uptime >> /var/log/wartung_log/uptime.txt'
+alias temp='/opt/vc/bin/vcgencmd measure_temp' #for rpi
