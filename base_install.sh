@@ -54,10 +54,10 @@ echo "----Please hold----"
 mkdir downloads &&
 mkdir scripts &&
 
-echo 'export PATH=$HOME/scripts:$PATH' >> .baschrc &&
-#echo 'PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'' >> .bashrc &&
+echo 'export PATH=$HOME/scripts:$PATH' >> .bashrc &&
+echo 'PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'' >> .bashrc &&
 
-#echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config &&
+echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config &&
 
 echo "----all Done----"
 echo "...."
