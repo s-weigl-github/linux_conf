@@ -23,7 +23,7 @@ apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev lib-ssl-dev
 echo "...."
 apt install -yf libelf-dev qemu
 echo "...."
-apt install -yf htop neofetch hdparm
+apt install -yf htop neofetch
 echo "...."
 echo "----Base install finished----"
 echo "...."
