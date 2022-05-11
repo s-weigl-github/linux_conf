@@ -3,7 +3,7 @@ echo "............................................."
 echo "----Base install started----"
 echo "...."
 echo "----Please hold----"
-apt install -yf moreutils net-tools mlocate git 
+apt install -yf moreutils net-tools mlocate git curl
 echo "...."
 apt install -yf gcc g++ make cmake gettext automake binutils autoconf gnu-standards 
 echo "...."
