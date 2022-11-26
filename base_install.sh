@@ -21,9 +21,9 @@ apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma
 echo "...."
 apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev lib-ssl-dev
 echo "...."
-apt install -yf libelf-dev qemu
+apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps
 echo "...."
-apt install -yf htop neofetch texinfo pkg-config
+apt install -yf htop neofetch texinfo pkg-config graphviz
 echo "...."
 echo "----Base install finished----"
 echo "...."
