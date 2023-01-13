@@ -11,7 +11,7 @@ apt install -yf build-essential module-assistant flex bison psmisc
 echo "...."
 apt install -yf dialog menu autotools-dev dh-make
 echo "...."
-apt install -yf hddtemp debian-keyring 
+apt install -yf hddtemp debian-keyring apt-transport-https
 echo "...."
 apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate
 echo "...."
