@@ -25,7 +25,7 @@ apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps
 echo "...."
 apt install -yf htop neofetch texinfo pkg-config graphviz
 echo "...."
-apt install -yf btrfs-progs
+apt install -yf btrfs-progs lm-sensors acpi
 echo "...."
 echo "----Base install finished----"
 echo "...."
