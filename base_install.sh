@@ -19,13 +19,13 @@ apt install -yf alien rpm rpm-common rpm-i18n elfutils lynx lynx-common
 echo "...."
 apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma
 echo "...."
-apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev lib-ssl-dev
+apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev
 echo "...."
 apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps
 echo "...."
 apt install -yf htop neofetch texinfo pkg-config graphviz
 echo "...."
-apt install -yf btrfs-progs lm-sensors acpi ncdu
+apt install -yf btrfs-progs lm-sensors acpi ncdu openssh-server ssh-askpass
 echo "...."
 echo "----Base install finished----"
 echo "...."
