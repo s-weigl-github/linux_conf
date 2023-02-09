@@ -1,5 +1,9 @@
 #!/bin/bash
 echo "............................................."
+echo "----first apt sync----"
+apt update && upgrade
+echo "----first apt sync DONE!----"
+echo "...."
 echo "----Base install started----"
 echo "...."
 echo "----Please hold----"
