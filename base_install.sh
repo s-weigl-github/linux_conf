@@ -11,7 +11,7 @@ apt install -yf build-essential module-assistant flex bison psmisc
 echo "...."
 apt install -yf dialog menu autotools-dev dh-make genisoimage
 echo "...."
-apt install -yf hddtemp debian-keyring apt-transport-https
+apt install -yf hddtemp debian-keyring apt-transport-https autofs
 echo "...."
 apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate
 echo "...."
@@ -23,7 +23,7 @@ apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev
 echo "...."
 apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps
 echo "...."
-apt install -yf htop neofetch texinfo pkg-config graphviz
+apt install -yf htop neofetch texinfo pkg-config graphviz nfs-common
 echo "...."
 apt install -yf btrfs-progs lm-sensors acpi ncdu openssh-server ssh-askpass
 echo "...."
