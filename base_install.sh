@@ -13,7 +13,7 @@ apt install -yf gcc g++ make cmake gettext automake binutils autoconf gnu-standa
 echo "...."
 apt install -yf build-essential module-assistant flex bison psmisc
 echo "...."
-apt install -yf dialog menu autotools-dev dh-make genisoimage
+apt install -yf dialog menu autotools-dev dh-make genisoimage bpytop
 echo "...."
 apt install -yf hddtemp debian-keyring apt-transport-https autofs
 echo "...."
