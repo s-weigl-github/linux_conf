@@ -5,4 +5,4 @@ apt full-upgrade &&
 date &&
 date +%s &&
 updatedb &&
-echo "Done!!!"
+echo "Done!"
