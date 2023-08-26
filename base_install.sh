@@ -21,7 +21,7 @@ apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate dmidecode
 echo "...."
 apt install -yf alien rpm rpm-common rpm-i18n elfutils lynx lynx-common
 echo "...."
-apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma
+apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw
 echo "...."
 apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf
 echo "...."
