@@ -25,7 +25,7 @@ apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw
 echo "...."
 apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf
 echo "...."
-apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps
+apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps hwinfo
 echo "...."
 apt install -yf htop neofetch texinfo pkg-config graphviz nfs-common
 echo "...."
