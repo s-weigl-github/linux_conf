@@ -11,7 +11,7 @@ apt install -yf moreutils net-tools mlocate git curl software-properties-common
 echo "...."
 apt install -yf gcc g++ make cmake gettext automake binutils autoconf gnu-standards 
 echo "...."
-apt install -yf build-essential module-assistant flex bison psmisc
+apt install -yf build-essential module-assistant flex bison psmisc crazydiskinfo
 echo "...."
 apt install -yf dialog menu autotools-dev dh-make genisoimage bpytop
 echo "...."
