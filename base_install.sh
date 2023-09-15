@@ -23,7 +23,7 @@ apt install -yf alien rpm rpm-common rpm-i18n elfutils lynx lynx-common
 echo "...."
 apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw
 echo "...."
-apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf
+apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf lsscsi
 echo "...."
 apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps hwinfo
 echo "...."
