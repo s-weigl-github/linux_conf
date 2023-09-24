@@ -15,13 +15,13 @@ apt install -yf build-essential module-assistant flex bison psmisc crazydiskinfo
 echo "...."
 apt install -yf dialog menu autotools-dev dh-make genisoimage bpytop inxi
 echo "...."
-apt install -yf hddtemp debian-keyring apt-transport-https autofs tree
+apt install -yf hddtemp debian-keyring apt-transport-https autofs tree usbutils
 echo "...."
-apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate dmidecode
+apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate dmidecode minicom
 echo "...."
 apt install -yf alien rpm rpm-common rpm-i18n elfutils lynx lynx-common
 echo "...."
-apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw
+apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw bash-completion
 echo "...."
 apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf lsscsi
 echo "...."
