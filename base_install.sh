@@ -1,40 +1,50 @@
 #!/bin/bash
 echo "............................................."
 echo "----first apt sync----"
-apt update && upgrade
+apt update && apt upgrade
 echo "----first apt sync DONE!----"
 echo "...."
 echo "----Base install started----"
 echo "...."
 echo "----Please hold----"
-apt install -yf moreutils net-tools mlocate git curl software-properties-common
-echo "...."
-apt install -yf gcc g++ make cmake gettext automake binutils autoconf gnu-standards 
-echo "...."
-apt install -yf build-essential module-assistant flex bison psmisc crazydiskinfo
-echo "...."
-apt install -yf dialog menu autotools-dev dh-make genisoimage bpytop inxi
-echo "...."
-apt install -yf hddtemp debian-keyring apt-transport-https autofs tree usbutils
-echo "...."
-apt install -yf whowatch arpwatch ethtool bwm-ng ntp ntpdate dmidecode minicom
-echo "...."
-apt install -yf alien rpm rpm-common rpm-i18n elfutils lynx lynx-common
-echo "...."
-apt install -yf smartmontools unzip unrar zip rar bzip2 arj lzma lshw bash-completion
-echo "...."
-apt install -yf hdparm blktool bc kmod dwarves libncurses5-dev fzf lsscsi
-echo "...."
-apt install -yf libelf-dev qemu a2ps imagemagick groff gv html2ps hwinfo
-echo "...."
-apt install -yf htop neofetch texinfo pkg-config graphviz nfs-common
-echo "...."
-apt install -yf btrfs-progs lm-sensors acpi ncdu openssh-server ssh-askpass
+sleep 2
+echo "----systools----"
+apt install -yf moreutils mlocate software-properties-common gnu-standards
+apt install -yf binutils autoconf psmisc debian-keyring apt-transport-https
+apt install -yf build-essential module-assistant autotools-dev dh-make
+apt install -yf genisoimage libelf-dev texinfo pkg-config tree whowatch
+apt install -yf bash-completion
+echo "----systools done----"
+sleep 2
+echo "----info----"
+apt install -yf crazydiskinfo bpytop inxi hddtemp htop neofetch lshw hwinfo
+apt install -yf smartmontools ncdu lsscsi hdparm blktool fzf
+echo "----info done----"
+sleep 2
+echo "----dev----"
+apt install -yf git gcc g++ make cmake gettext automake flex bison bc kmod
+apt install -yf dwarves libncurses5-dev
+echo "----dev done----"
+sleep 2
+echo "----net----"
+apt install -yf curl net-tools arpwatch ethtool bwm-ng ntp ntpdate
+apt install -yf lynx lynx-common minicom openssh-server ssh-askpass
+apt install -yf nfs-common autofs
+echo "----net done----"
+sleep 2
+echo "----other----"
+apt install -yf dmidecode alien rpm rpm-common rpm-i18n elfutils usbutils
+apt install -yf btrfs-progs lm-sensors acpi qemu unzip unrar zip rar bzip2
+apt install -yf arj lzma
+echo "----other done----"
+sleep 2
+echo "----graphics----"
+apt install -yf graphviz dialog menu a2ps imagemagick groff gv html2ps
+echo "----graphics done----"
+sleep 2
 echo "...."
 echo "----Base install finished----"
 echo "...."
-
-
 echo "............................................."
 echo "----systm config----"
 echo "...."
@@ -42,6 +52,7 @@ echo "----some things must be created ----"
 echo "----and some must be changed----"
 echo "...."
 echo "----Please hold----"
+sleep 2
 
 mkdir -p downloads &&
 mkdir -p scripts &&
