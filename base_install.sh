@@ -18,7 +18,7 @@ echo "----systools done----"
 sleep 2
 echo "----info----"
 apt install -yf crazydiskinfo bpytop inxi hddtemp htop neofetch lshw hwinfo
-apt install -yf smartmontools ncdu lsscsi hdparm blktool fzf findmnt
+apt install -yf smartmontools ncdu lsscsi hdparm blktool fzf findmnt sysstat
 echo "----info done----"
 sleep 2
 echo "----dev----"
