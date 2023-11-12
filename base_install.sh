@@ -13,7 +13,7 @@ apt install -yf moreutils mlocate software-properties-common gnu-standards
 apt install -yf binutils autoconf psmisc debian-keyring apt-transport-https
 apt install -yf build-essential module-assistant autotools-dev dh-make
 apt install -yf genisoimage libelf-dev texinfo pkg-config tree whowatch
-apt install -yf bash-completion
+apt install -yf bash-completion smbios-utils 
 echo "----systools done----"
 sleep 2
 echo "----info----"
