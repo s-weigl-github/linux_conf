@@ -17,8 +17,8 @@ apt install -yf bash-completion smbios-utils
 echo "----systools done----"
 sleep 2
 echo "----info----"
-apt install -yf crazydiskinfo bpytop inxi hddtemp htop neofetch lshw hwinfo
-apt install -yf smartmontools ncdu lsscsi hdparm blktool fzf findmnt sysstat
+apt install -yf bpytop inxi htop neofetch lshw hwinfo
+apt install -yf smartmontools ncdu lsscsi hdparm blktool fzf sysstat
 echo "----info done----"
 sleep 2
 echo "----dev----"
@@ -34,7 +34,7 @@ echo "----net done----"
 sleep 2
 echo "----other----"
 apt install -yf dmidecode alien rpm rpm-common rpm-i18n elfutils usbutils
-apt install -yf btrfs-progs lm-sensors acpi qemu unzip unrar zip rar bzip2
+apt install -yf btrfs-progs lm-sensors acpi unzip unrar zip rar bzip2
 apt install -yf arj lzma
 echo "----other done----"
 sleep 2
