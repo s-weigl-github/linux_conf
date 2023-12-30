@@ -23,7 +23,7 @@ echo "----info done----"
 sleep 2
 echo "----dev----"
 apt install -yf git gcc g++ make cmake gettext automake flex bison bc kmod
-apt install -yf dwarves libncurses5-dev
+apt install -yf dwarves libncurses5-dev apt-show-versions
 echo "----dev done----"
 sleep 2
 echo "----net----"
