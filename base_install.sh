@@ -35,7 +35,7 @@ sleep 2
 echo "----other----"
 apt install -yf dmidecode alien rpm rpm-common rpm-i18n elfutils usbutils
 apt install -yf btrfs-progs lm-sensors acpi unzip unrar zip rar bzip2
-apt install -yf arj lzma
+apt install -yf arj lzma iat
 echo "----other done----"
 sleep 2
 echo "----graphics----"
