@@ -29,13 +29,13 @@ sleep 2
 echo "----net----"
 apt install -yf curl net-tools arpwatch ethtool bwm-ng ntp ntpdate
 apt install -yf lynx lynx-common minicom openssh-server ssh-askpass
-apt install -yf nfs-common autofs
+apt install -yf nfs-common autofs tftp
 echo "----net done----"
 sleep 2
 echo "----other----"
 apt install -yf dmidecode alien rpm rpm-common rpm-i18n elfutils usbutils
 apt install -yf btrfs-progs lm-sensors acpi unzip unrar zip rar bzip2
-apt install -yf arj lzma iat
+apt install -yf arj lzma iat tldr
 echo "----other done----"
 sleep 2
 echo "----graphics----"
