@@ -13,7 +13,7 @@ apt install -yf moreutils mlocate software-properties-common gnu-standards
 apt install -yf binutils autoconf psmisc debian-keyring apt-transport-https
 apt install -yf build-essential module-assistant autotools-dev dh-make
 apt install -yf genisoimage libelf-dev texinfo pkg-config tree whowatch
-apt install -yf bash-completion smbios-utils 
+apt install -yf bash-completion smbios-utils most
 echo "----systools done----"
 sleep 2
 echo "----info----"
@@ -52,19 +52,26 @@ echo "----some things must be created ----"
 echo "----and some must be changed----"
 echo "...."
 echo "----Please hold----"
+sleep 5
+#
+echo "----adding folders----"
 sleep 2
-
 mkdir -p downloads &&
 mkdir -p scripts &&
-
-echo 'export PATH=$HOME/scripts:$PATH' >> .bashrc &&
+#
+sleep 2
+echo "----modify .bashrc----"
+sleep 2
+echo "export PATH=$HOME/scripts:$PATH" >> .bashrc &&
+echo "export PAGER='most'" >> .bashrc &&
 echo "alias grep='grep -n --color=auto'" >> .bashrc &&
 echo "alias cl='clear'" >> .bashrc &&
 #echo "PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'" >> .bashrc &&
-
+#
 #echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config &&
-
+#
 echo "----all Done----"
+sleep 5
 echo "...."
 updatedb &&
 echo "----Systm reboot----"
