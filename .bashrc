@@ -11,7 +11,7 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ereasedups
 #
 export GREP_OPTIONS='--color=auto'
-alias grep='grep -n --color=auto'
+alias grep='grep -ni --color=auto'
 #
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
