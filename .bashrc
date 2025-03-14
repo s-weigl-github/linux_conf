@@ -15,17 +15,26 @@ alias grep='grep -ni --color=auto'
 #
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
-alias ls='ls $LS_OPTIONS'
+alias ls='ls $LS_OPTIONS -F'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
+#
+alias inxi=' inxi -Fm'
+alias btop='btop --utf-force'
+#
+# always run make with -j and use cpu cores -1
+alias make='make -j$(nproc --ignore=1)'
 #
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias cl='clear'
 alias pip='pip-3.1'
-alias uptime='uptime && uptime >> /var/log/wartung_log/uptime.txt'
-alias temp='/opt/vc/bin/vcgencmd measure_temp' #for rpi
+#alias uptime='uptime && uptime >> /var/log/wartung_log/uptime.txt'
+#alias temp='/opt/vc/bin/vcgencmd measure_temp' #for rpi
+#
+# use most as pager
+export PAGER='most'
 #
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
@@ -35,4 +44,3 @@ export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
 export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
-
