@@ -4,9 +4,9 @@ apt upgrade &&
 apt full-upgrade &&
 date &&
 date +%s &&
-tldr --update &&
-echo "updated tldr"
+tldr --update >> /dev/null &&
+echo "updated tldr" &&
 mandb >> /dev/null &&
-echo "mandb done!"
+echo "mandb Done!" &&
 updatedb &&
 echo "Done!"
