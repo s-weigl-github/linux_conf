@@ -17,7 +17,7 @@ alias grep='grep -ni --color=auto'
 #
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
-alias ls='ls $LS_OPTIONS -F'
+alias ls='ls $LS_OPTIONS -F' # -F shows file attributes
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 #
