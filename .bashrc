@@ -5,7 +5,7 @@ umask 022
 #
 export PATH=$HOME/scripts:$PATH
 #
-export LANG=de_DE.UTF-8
+#export LANG=de_DE.UTF-8
 export EDITOR=nano
 #
 export HISTSIZE='5000'
@@ -17,7 +17,7 @@ alias grep='grep -ni --color=auto'
 #
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
-alias ls='ls $LS_OPTIONS -F' # -F shows file attributes
+alias ls='ls $LS_OPTIONS -p' # -p shows file attributes
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 #
