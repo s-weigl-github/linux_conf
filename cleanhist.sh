@@ -3,7 +3,7 @@
 # little script to clean the history file
 #
 # file to clean
-file=~root/.bash_history
+file=~/.bash_history
 #$file=hist29032025.txt
 #
 sed -i '/cl/d' $file
