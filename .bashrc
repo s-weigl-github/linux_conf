@@ -23,6 +23,7 @@ alias l='ls $LS_OPTIONS -lA'
 #
 alias inxi=' inxi -Fm'
 alias btop='btop --utf-force'
+alias bcat='batcat' # batcat is a alternate to the cat command
 #
 # always run make with -j and use cpu cores -1
 alias make='make -j$(nproc --ignore=1)'
