@@ -22,8 +22,9 @@ alias ls='ls $LS_OPTIONS -F' # -F shows file attributes
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 #
-alias inxi=' inxi -Fm'
-alias btop='btop --utf-force'
+#alias inxi=' inxi -Fm'
+alias inxi='inxi --admin --verbosity=7 --filter --no-host --width -w berlin,germany'
+#alias btop='btop --utf-force'
 alias bcat='batcat' # batcat is a alternate to the cat command
 #
 # always run make with -j and use cpu cores -1
