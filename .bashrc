@@ -1,10 +1,10 @@
-### own bash config ###
-#export PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'
-##export PS1='\[\033[32m\]\t \h:\w\$ '
-PS1='\[\033[1;33m\]╭╴\[\033[1;35m\]\[\e[3m\]\D{%H:%M:%S %a %d %b} \[\e[m\]\[\e[m\]\[\e[1m\]${debian_chroot:+($debian_chroot)}\[\e[m\]\[\e[3m\]\u\[\e[m\]\[\033[1;36m\]\[\e[3m\]＠\[\e[m\]\[\e[3m\]\h\[\e[m\]\[\033[0;36m\]\[\033[0;93m\[\e[m\]\n\[\033[1;33m\]╰\[\033[0;32m\]⌊\[\e[3m\]\[\033[1;30m\]\w\[\e[m\]\[\e[m\]\[\033[0;32m\]⌋\[\033[00m\]\[\033[0;31m\]→ \[\e[m\]\[\033[0;37m\]';
-umask 022
+# ~/.bashrc: executed by bash(1) for non-login shells.
 #
-export PATH=$HOME/scripts:$PATH
+# Note: PS1 and umask are already set in /etc/profile. You should not
+# need this unless you want different defaults for root.
+## PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'
+PS1='\[\033[1;33m\]╭╴\[\033[1;35m\]\[\e[3m\]\D{%H:%M:%S %a %d %b} \[\e[m\]\[\e[m\]\[\e[1m\]${debian_chroot:+($debian_chroot)}\[\e[m\]\[\e[3m\]\u\[\e[m\]\[\033[1;36m\]\[\e[3m\]＠\[\e[m\]\[\e[3m\]\h\[\e[m\]\[\033[0;36m\]\[\033[0;93m\[\e[m\]\n\[\033[1;33m\]╰\[\033[0;32m\]⌊\[\e[3m\]\[\033[1;36m\]\w\[\e[m\]\[\e[m\]\[\033[0;32m\]⌋\[\033[00m\]\[\033[0;31m\]→ \[\e[m\]\[\033[0;37m\]';
+ umask 022
 #
 #export LANG=de_DE.UTF-8
 export EDITOR=nano
@@ -13,32 +13,31 @@ export HISTSIZE='5000'
 export HISTFILESIZE='5000'
 export HISTCONTROL=ignoredups:ereasedups:ignorespace
 #
-export GREP_OPTIONS='--color=auto'
+# You may uncomment the following lines if you want `ls' to be colorized:
+ export LS_OPTIONS='--color=auto'
+ eval "$(dircolors)"
+ alias ls='ls $LS_OPTIONS -F'
+ alias ll='ls $LS_OPTIONS -l'
+ alias l='ls $LS_OPTIONS -lA'
+#
+# grep color config
+export GREP_OPTIONS='--color=always'
 alias grep='grep -ni --color=auto'
-#
-export LS_OPTIONS='--color=auto'
-eval "`dircolors`"
-alias ls='ls $LS_OPTIONS -F' # -F shows file attributes
-alias ll='ls $LS_OPTIONS -l'
-alias l='ls $LS_OPTIONS -lA'
-#
-#alias inxi=' inxi -Fm'
-alias inxi='inxi --admin --verbosity=7 --filter --no-host --width -w berlin,germany'
-#alias btop='btop --utf-force'
-alias bcat='batcat' # batcat is a alternate to the cat command
-#
-# always run make with -j and use cpu cores -1
-alias make='make -j$(nproc --ignore=1)'
-#
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+# Some more alias to avoid making mistakes:
+ alias rm='rm -i'
+ alias cp='cp -i'
+ alias mv='mv -i'
 alias cl='clear'
-alias pip='pip-3.1'
-#alias uptime='uptime && uptime >> /var/log/wartung_log/uptime.txt'
-#alias temp='/opt/vc/bin/vcgencmd measure_temp' #for rpi
+alias inxi='inxi --admin --verbosity=7 --filter --no-host --width -w berlin,germany'
+alias btop='btop --utf-force'
+alias bcat='batcat' # batcat is a alternate to the cat command
+alias diff='diff -y --color=auto' # display diff in 2 colums with color
 #
-# use most as pager
+alias ssha='eval $(ssh-agent && ssh-add ~/.ssh/ansible)'
+#
+alias make='make -j$(nproc --ignore=1)'
+# path to script
+export PATH=$HOME/scripts:$PATH
 export PAGER='most'
 #
 # Less Colors for Man Pages
