@@ -39,7 +39,7 @@
 # set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
-# set breaklonglines
+ set breaklonglines
 
 ## Do case-sensitive searches by default.
 # set casesensitive
@@ -160,7 +160,7 @@ set locking
 # set smarthome
 
 ## Spread overlong lines over multiple screen lines.
-# set softwrap
+ set softwrap
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not have a default value.
