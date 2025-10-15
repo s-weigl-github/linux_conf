@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 apt update &&
 apt upgrade &&
 apt full-upgrade &&
