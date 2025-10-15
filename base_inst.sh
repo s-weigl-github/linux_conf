@@ -127,6 +127,7 @@ install_net_tools(){
     ntp \
     lynx \
     curl \
+    samba \
     autofs \
     minicom \
     ntpdate \
@@ -135,7 +136,9 @@ install_net_tools(){
     arpwatch \
     ipcalc-ng \
     net-tools \
+    smbclient \
     nfs-common \
+    cifs-utils \
     lynx-common \
     ssh-askpass \
     openssh-server
