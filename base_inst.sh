@@ -139,6 +139,7 @@ install_net_tools(){
     smbclient \
     nfs-common \
     cifs-utils \
+    netdiscover \
     lynx-common \
     ssh-askpass \
     openssh-server
