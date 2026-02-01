@@ -3,7 +3,7 @@
 # Note: PS1 and umask are already set in /etc/profile. You should not
 # need this unless you want different defaults for root.
 ## PS1='\[\e[0;93m\]<\[\e[0;95m\]\t \[\e[0;37m\]\d\[\e[0;93m\]>\[\e[0;96m\]\u\[\e[0;96m\]@\[\e[0;96m\]\h\[\e[0m\]:\[\e[0;92m\]\w\[\e[0;38;5;39m\]\$ \[\e[0m\]'
-PS1='\[\033[1;33m\]╭╴\[\033[1;35m\]\[\e[3m\]\D{%H:%M:%S %a %d %b} \[\e[m\]\[\e[m\]\[\e[1m\]${debian_chroot:+($debian_chroot)}\[\e[m\]\[\e[3m\]\u\[\e[m\]\[\033[1;36m\]\[\e[3m\]＠\[\e[m\]\[\e[3m\]\h\[\e[m\]\[\033[0;36m\]\[\033[0;93m\[\e[m\]\n\[\033[1;33m\]╰\[\033[0;32m\]⌊\[\e[3m\]\[\033[1;36m\]\w\[\e[m\]\[\e[m\]\[\033[0;32m\]⌋\[\033[00m\]\[\033[0;31m\]→ \[\e[m\]\[\033[0;37m\]';
+PS1='\[\033[1;33m\]╭╴\[\033[1;35m\]\[\e[3m\]\D{%H:%M:%S %a %d %b} \[\e[m\]\[\e[m\]\[\e[1m\]${debian_chroot:+($debian_chroot)}\[\e[m\]\[\e[3m\]\u\[\e[m\]\[\033[1;36m\]\[\e[3m\]＠\[\e[m\]\[\e[3m\]\h\[\e[m\]\[\033[0;36m\]\[\033[0;93m\[\e[m\]\n\[\033[1;33m\]╰\[\033[0;32m\]⌊\[\e[3m\]\[\033[1;36m\]\w\[\e[m\]\[\e[m\]\[\033[0;32m\]⌋\[\033[00m\]\[\033[0;31m\]→ \[\e[m\]\[\033[0;37m\]'
  umask 022
 #
 #export LANG=de_DE.UTF-8
@@ -29,7 +29,7 @@ alias grep='grep -ni --color=auto'
  alias mv='mv -i'
 alias cl='clear'
 alias inxi='inxi --admin --verbosity=7 --filter --no-host --width -w berlin,germany'
-alias btop='btop --utf-force'
+alias btop='btop --force-utf'
 alias bcat='batcat' # batcat is a alternate to the cat command
 alias diff='diff -y --color=auto' # display diff in 2 colums with color
 #
