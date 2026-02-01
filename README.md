@@ -2,7 +2,7 @@ debian config scripts
 =============
 
 config scripts for a freshly installed linux
-cept them realy simple
+kept them really simple
 
 <!--
 I don't know yet!
