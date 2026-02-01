@@ -32,6 +32,7 @@ alias inxi='inxi --admin --verbosity=7 --filter --no-host --width -w berlin,germ
 alias btop='btop --force-utf'
 alias bcat='batcat' # batcat is a alternate to the cat command
 alias diff='diff -y --color=auto' # display diff in 2 colums with color
+alias tree='tree -aCL 3' # tree 3 level with color and hidden files
 #
 alias ssha='eval $(ssh-agent && ssh-add ~/.ssh/ansible)'
 #
