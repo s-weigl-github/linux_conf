@@ -160,7 +160,7 @@ install_other_tools(){
     zip \
     rar \
     arj \
-    #tldr \
+    tealdeer \
     acpi \
     lzma \
     alien \
