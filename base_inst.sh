@@ -58,7 +58,7 @@ install_system_tools(){
     gnu-standards \
     bash-completion \
     libncurses5-dev \
-    software-properties-common
+    #software-properties-common
 }
 #
 ##########################################################
@@ -83,9 +83,9 @@ install_info(){
     hdparm \
     blktool \
     sysstat \
-    neofetch \
+    fastfetch \
     dmidecode \
-    smbios-utils \
+    #smbios-utils \
     smartmontools
 }
 #
@@ -124,13 +124,13 @@ install_net_tools(){
   echo "############################################"
   #
   apt-get install -y \
-    ntp \
+    #ntp \
     lynx \
     curl \
     samba \
-    autofs \
+    #autofs \
     minicom \
-    ntpdate \
+    #ntpdate \
     ethtool \
     sipcalc \
     arpwatch \
@@ -160,7 +160,7 @@ install_other_tools(){
     zip \
     rar \
     arj \
-    tldr \
+    #tldr \
     acpi \
     lzma \
     alien \
@@ -170,7 +170,7 @@ install_other_tools(){
     pbzip2 \
     usbutils \
     elfutils \
-    rpm-i18n \
+    #rpm-i18n \
     rpm-common \
     lm-sensors \
     btrfs-progs
