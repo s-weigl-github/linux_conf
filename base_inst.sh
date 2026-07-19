@@ -50,7 +50,6 @@ install_system_tools(){
     texinfo \
     binutils \
     autoconf \
-    whowatch \
     moreutils \
     pkg-config \
     libelf-dev \
@@ -207,6 +206,7 @@ install_graphic_tools(){
     a2ps \
     menu \
     groff \
+    screen \
     dialog \
     html2ps \
     graphviz \
