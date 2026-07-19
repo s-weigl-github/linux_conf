@@ -57,8 +57,7 @@ install_system_tools(){
     genisoimage \
     gnu-standards \
     bash-completion \
-    libncurses5-dev \
-    #software-properties-common
+    libncurses-dev
 }
 #
 ##########################################################
@@ -85,7 +84,6 @@ install_info(){
     sysstat \
     fastfetch \
     dmidecode \
-    #smbios-utils \
     smartmontools
 }
 #
@@ -124,13 +122,11 @@ install_net_tools(){
   echo "############################################"
   #
   apt-get install -y \
-    #ntp \
     lynx \
     curl \
     samba \
-    #autofs \
+    afuse \
     minicom \
-    #ntpdate \
     ethtool \
     sipcalc \
     arpwatch \
@@ -142,7 +138,8 @@ install_net_tools(){
     netdiscover \
     lynx-common \
     ssh-askpass \
-    openssh-server
+    openssh-server \
+    ntpsec-ntpdate
 }
 #
 ##########################################################
@@ -160,7 +157,7 @@ install_other_tools(){
     zip \
     rar \
     arj \
-    tealdeer \
+    xxd \
     acpi \
     lzma \
     alien \
@@ -170,7 +167,7 @@ install_other_tools(){
     pbzip2 \
     usbutils \
     elfutils \
-    #rpm-i18n \
+    tealdeer \
     rpm-common \
     lm-sensors \
     btrfs-progs
